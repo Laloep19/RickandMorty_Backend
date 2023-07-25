@@ -11,10 +11,10 @@ import { GenderModule } from './gender/gender.module';
   imports: [
     TypeOrmModule.forRoot({
       type: 'mysql',
-      host: 'containers-us-west-90.railway.app',
-      port: 5669,
+      host: 'containers-us-west-193.railway.app',
+      port: 6653,
       username: 'root',
-      password: 'XEsB3laFJgF3GfFMHsMd',
+      password: '24MYjtysciDY8G73rwRL',
       database: 'railway',
       entities: [__dirname + '/**/*.entity{.ts,.js}'],
       synchronize: true
