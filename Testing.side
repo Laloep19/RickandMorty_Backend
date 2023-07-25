@@ -1,0 +1,42 @@
+{
+  "id": "43378487-c7b0-4895-9a04-939f1a0b570f",
+  "version": "2.0",
+  "name": "Testing",
+  "url": "https://www.w3schools.com/",
+  "tests": [{
+    "id": "50a46a1a-5f47-4372-bf34-3e3a8faffd22",
+    "name": "Untitled",
+    "commands": [{
+      "id": "74efde07-e761-4d5d-a178-b75d34c490bf",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.w3schools.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0b752c1e-af50-4819-9dee-d2693b175cfb",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href",
+      "targets": [],
+      "value": "pageurl"
+    }, {
+      "id": "9c6fecd4-ad2c-473e-874f-ee76dcccad8c",
+      "comment": "",
+      "command": "verify",
+      "target": "pageurl",
+      "targets": [],
+      "value": "https://www.w3schools.com/"
+    }]
+  }],
+  "suites": [{
+    "id": "7dc71649-6002-4bc0-a20c-fcda71cf6838",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["50a46a1a-5f47-4372-bf34-3e3a8faffd22"]
+  }],
+  "urls": ["https://www.w3schools.com/"],
+  "plugins": []
+}
