@@ -10,6 +10,6 @@ export class Status{
     @Column()
     status: string
     
-    @OneToMany(() => Character,character => character.status)
-    characters: Character[]
+    // @OneToMany(() => Character,character => character.status)
+    // characters: Character[]
 }
