@@ -20,9 +20,9 @@ export class Character{
     @CreateDateColumn({type: 'datetime'})
     createdAt: Date
 
-    @ManyToOne(() => Gender,gender => gender.gender)
-    gender: Gender
+    // @ManyToOne(() => Gender,gender => gender.gender)
+    // gender: Gender
 
-    @ManyToOne(() => Status,status => status.status)
-    status: Status
+    // @ManyToOne(() => Status,status => status.status)
+    // status: Status
 }
