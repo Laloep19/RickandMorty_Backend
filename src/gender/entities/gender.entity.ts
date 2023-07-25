@@ -10,6 +10,6 @@ export class Gender{
     @Column()
     gender: string
     
-    // @OneToMany(() => Character,character => character.gender)
-    // characters: Character[]
+    @OneToMany(() => Character,character => character.gender)
+    characters: Character[]
 }

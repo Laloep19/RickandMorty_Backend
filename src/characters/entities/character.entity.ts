@@ -2,7 +2,7 @@ import { Entity, Column, PrimaryGeneratedColumn, CreateDateColumn, ManyToOne, Jo
 import { Status } from "src/status/entities/status.entity"
 import { Gender } from "src/gender/entities/gender.entity"
 
-@Entity()
+@Entity({name: 'actors'})
 export class Character{
 
     @PrimaryGeneratedColumn()
@@ -20,9 +20,9 @@ export class Character{
     @CreateDateColumn({type: 'datetime'})
     createdAt: Date
 
-    // @ManyToOne(() => Gender,gender => gender.gender)
-    // gender: Gender
+    @ManyToOne(() => Gender,gender => gender.gender)
+    gender: Gender
 
-    // @ManyToOne(() => Status,status => status.status)
-    // status: Status
+    @ManyToOne(() => Status,status => status.status)
+    status: Status
 }

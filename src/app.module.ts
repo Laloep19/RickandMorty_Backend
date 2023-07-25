@@ -17,7 +17,7 @@ import { GenderModule } from './gender/gender.module';
       password: '24MYjtysciDY8G73rwRL',
       database: 'railway',
       entities: [__dirname + '/**/*.entity{.ts,.js}'],
-      synchronize: true
+      // synchronize: true
     }),
     CharactersModule,
     StatusModule,
